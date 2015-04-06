@@ -4,7 +4,6 @@ import Data.Maybe
 import qualified Data.Map.Strict as M 
 import System.IO
 import Control.Monad
-import Control.Monad.IO.Class
 import Control.Monad.Trans.State.Lazy
 
 -- Some type synonyms

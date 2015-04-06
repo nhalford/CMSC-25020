@@ -214,7 +214,10 @@ sortMap = sortBy comparePair . M.toList
 exportMap :: (Show a, Ord a) => (String, M.Map String a) -> IO ()
 exportMap (path, m) = writeFile ("output/" ++ path) (concat (comments : strings))
     where strings = map (\(k,v) -> k ++ "\t" ++ (show v) ++ "\n") (sortMap m)
-          comments = unlines ["# It is unclear exactly what asterisks (*) in this file mean"
+          comments = unlines ["# dx1 file made by Noah Halford"
+                             ,"# Dictionary file for Voynich manuscript language " ++ l:","
+                             ,"# hand " ++ h ++ ", and source " ++ [s]
+                             ,"# It is unclear exactly what asterisks (*) in this file mean"
                              ,"# so they were treated as part of the alphabet."
                              ,"# Comments, exclamation points (!), and percent"
                              ,"# symbols (%) were removed."
@@ -222,3 +225,7 @@ exportMap (path, m) = writeFile ("output/" ++ path) (concat (comments : strings)
                              ,"# specially. That is, anything of the form xxx[xxx|xxx]xxx"
                              ,"# was treated as one word, even if there were periods,"
                              ,"# i.e., spaces, within the brackets."]
+          l = last lang
+          (lang,rest) = break (== '_') path
+          (h, end) = break (== '_') $ tail rest
+          s = head $ tail end

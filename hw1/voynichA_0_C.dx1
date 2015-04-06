@@ -1,0 +1,52 @@
+# It is unclear exactly what asterisks (*) in this file mean
+# so they were treated as part of the alphabet.
+# Comments, exclamation points (!), and percent
+# symbols (%) were removed.
+# Varations (of the form [A|B]) were not treated
+# specially. That is, anything of the form xxx[xxx|xxx]xxx
+# was treated as one word, even if there were periods,
+# i.e., spaces, within the brackets.
+4O	1
+4OD8	1
+4ODS8	1
+4OPG	1
+4OP[2R*]	1
+8AE[OA]K	1
+8AM	1
+8G	1
+8SC8G	1
+8TCPAN	1
+AIR	1
+E	1
+FOE	1
+FTCFZG	1
+G	1
+G8G	1
+GDTC8G	1
+GFTCG	1
+GHAE	1
+GHCCG	1
+GHCO	1
+GHTCG	1
+HOCC8G	1
+O8G	1
+ODC	1
+ODCO8G	1
+OHOR	1
+PZG	1
+SC8G	1
+SCCD	1
+SCHG	1
+SCO8G	1
+SDG	1
+SDZ8G	1
+SDZCPZG	1
+SDZG	1
+TC8G	1
+TCO8G	1
+TCOH	1
+TCOHCC[OG]	1
+TODCO8G	1
+TODG	1
+TP8G	1
+[*2]A2	1
